@@ -45,7 +45,7 @@ const Promotion = () => {
         <p>
           Get ready for a shopping experience like never before with our Deals of the Month! Every
           purchase comes with exclusive perks and offers, making this month a celebration of savvy
-          choices and amazing deals. Don't miss out! 🎁🛒
+          choices and amazing deals. Don't miss out! 🛒🎅🌲🎁
         </p>
         <ul className={classes.stats}>
           <StatBox label="Days" value={time.days} />

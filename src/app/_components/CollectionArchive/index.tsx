@@ -1,3 +1,22 @@
+/**
+ * CollectionArchive Component
+ *
+ * Este componente muestra una colección de productos en forma de archivo.
+ * Permite filtrar por categorías y ordenar los productos.
+ * También muestra la paginación y el rango de páginas.
+ *
+ * Props:
+ * - className: string (opcional) - Clase CSS adicional para el componente.
+ * - relationTo: 'products' (opcional) - Tipo de relación con otros productos.
+ * - populateBy: 'collection' | 'selection' (opcional) - Forma de poblar los documentos.
+ * - showPageRange: boolean (opcional) - Indica si se muestra el rango de páginas.
+ * - onResultChange: (result: Result) => void (opcional) - Función de callback que se ejecuta cuando cambian los resultados.
+ * - limit: number (opcional) - Límite de productos por página.
+ * - populatedDocs: ArchiveBlockProps['populatedDocs'] (opcional) - Documentos poblados.
+ * - populatedDocsTotal: ArchiveBlockProps['populatedDocsTotal'] (opcional) - Total de documentos poblados.
+ * - categories: ArchiveBlockProps['categories'] (opcional) - Categorías de los productos.
+ */
+
 'use client'
 
 import React, { Fragment, useCallback, useEffect, useRef, useState } from 'react'
@@ -34,6 +53,14 @@ export type Props = {
   populatedDocsTotal?: ArchiveBlockProps['populatedDocsTotal']
   categories?: ArchiveBlockProps['categories']
 }
+
+/**
+ * CollectionArchive Component
+ *
+ * Este componente muestra una colección de productos en forma de archivo.
+ * Permite filtrar por categorías y ordenar los productos.
+ * También muestra la paginación y el rango de páginas.
+ */
 
 export const CollectionArchive: React.FC<Props> = props => {
   const { categoryFilters, sort } = useFilter()
