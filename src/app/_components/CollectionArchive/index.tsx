@@ -54,14 +54,6 @@ export type Props = {
   categories?: ArchiveBlockProps['categories']
 }
 
-/**
- * CollectionArchive Component
- *
- * Este componente muestra una colección de productos en forma de archivo.
- * Permite filtrar por categorías y ordenar los productos.
- * También muestra la paginación y el rango de páginas.
- */
-
 export const CollectionArchive: React.FC<Props> = props => {
   const { categoryFilters, sort } = useFilter()
 
